@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('https://i.postimg.cc/25Q6Q1Cz/raimond-klavins-KKm1ua7-MSf0-unsplash.jpg');
+    background-size: cover;
+   overflow:hidden;
+    height: 100vh;
+    justify-content: center;
+}
+/* Desktop Icons  */
+.edgein img {
+    width: 213vh;
+    height: 100vh;
+    z-index: -10;
+}
+
+.chromein2 img{
+    width: 213vh;
+    height: 100vh;
+    z-index: -4;
+}
+
+.binin img{
+    width: 213vh;
+    height: 100vh;
+    z-index: -4;
+}
+
+.thispcin img{
+    width: 213vh;
+    height: 100vh;
+    z-index: -4;
+}
+
+.text{
+    color: white;
+    text-shadow: 3px 3px 3px #000000;
+    padding-left: 5px;
+    font-style: italic;
+    font-family:cursive;
+    padding-top: 2px;
+    text-decoration: none;
+}
+/* Taskbar  */
+.taskbar{
+    background-color: #fdfdfd;
+    position: absolute;
+    display: flex;
+    bottom: 0%;
+    width: 100%;
+    height: 45px;
+    
+}
+.taskbar img{
+    position: absolute;
+    display: flex;
+    bottom: 0%;
+    height: 40px;
+    right: 2%;
+}
+
+.rightside{
+    
+    display: flex;
+    position: absolute;
+    
+}
+.container {
+    bottom:0;
+    margin-left: 90%;
+    z-index: -0; 
+    position: fixed;
+
+}
+  /* Taskbar Icons  */
+  /* extrabuttons */
+  .backbtn{
+    display: none;
+   margin:auto;
+   cursor: pointer;
+  }
+  .backbtn img{
+    margin-bottom: 43%;
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    border-radius: 60px;
+    align-items: center;
+    margin-left: 86%;
+    cursor: pointer;
+    
+  }
+  .sutdown{
+    display: none;  
+    margin: auto;
+}
+.sutdown img{
+    margin-bottom: 5%;
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    border-radius: 60px;
+    align-items: center;
+    margin-left: 63%;
+    cursor: pointer;
+    z-index:110;
+    
+}
+.sutdownin{
+    position: absolute;
+    bottom: -800px;
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    right:-4% ;
+    padding: 50px;
+    display :none;
+}
+
+.sutdownin img{
+    border-radius: 10px;
+    height: 150px;
+    z-index: 110;
+}
+
+/* .restart{
+    margin: auto;
+    display: none;  
+    
+}
+.restart img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 66.5%;
+    margin-bottom: 10%;
+    border-radius: 60px;
+    cursor: pointer; 
+} */
+/* First Icon  */
+.starticon{
+    margin: auto;
+    cursor: pointer;
+}
+.starticon img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 30%;
+}
+.startmenu{
+    position: absolute;
+    bottom: -800px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+}
+
+.startmenu img{
+    border-radius: 10px;
+    height: 460px;
+    
+} 
+/* Second Icon  */
+.searchicon{
+    margin: auto;
+    cursor: pointer;
+}
+.searchicon img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 34%;
+}
+.searchin{
+    position: absolute;
+    bottom: -800px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+}
+.searchin img{
+    border-radius: 10px;
+    height: 460px;
+}
+/* Third Icon  */
+.thirdicon{
+    margin: auto;
+    cursor: pointer;
+}
+.thirdicon img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 38%;
+}
+.threein{
+    position: absolute;
+    bottom: -800px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+}
+.threein img{
+    border-radius: 10px;
+    height: 460px;
+}
+/* Fourth Icon  */
+.fourthicon{
+    cursor: pointer;
+    margin:auto;
+}
+.fourthicon img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 42%;
+}
+.fourin{
+    position: absolute;
+    bottom: -800px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+}
+.fourin img{
+    border-radius: 10px;
+    height: 460px;
+}
+/* Fifth Icon */
+.mcicon{
+    cursor: pointer;
+    margin:auto;
+}
+.mcicon img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 46%;
+}
+.mcin{
+    position: absolute;
+    bottom: -800px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+}
+.mcin img{
+    border-radius: 10px;
+    height: 460px;
+    transition:cubic-bezier(1, 1, 1, 1);
+}
+/* Sixth Icon */
+.foldericon{
+    cursor: pointer;
+    margin:auto;
+}
+.foldericon img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 50%;
+}
+.folderin{
+    position: absolute;
+    bottom: -800px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+}
+
+.folderin img {
+    border-radius: 10px;
+    height: 460px;
+    transition:cubic-bezier(1, 1, 1, 1);
+}
+/* Seventh Icon */
+.vscodeicon{
+   cursor: pointer;
+   margin:auto;
+}
+.vscodeicon img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 54%;
+}
+.vscodein{
+    position: absolute;
+    bottom: -800px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+}
+.vscodein img{
+    border-radius: 10px;
+    height: 460px;
+    transition:cubic-bezier(1, 1, 1, 1);
+}
+/* Eighth Icon */
+.chromeicon{
+    cursor: pointer;
+    margin:auto;
+}
+.chromeicon img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    margin-left: 58%;
+}
+.chromein{
+    position: absolute;
+    bottom: -800px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+
+}
+.chromein img{
+    border-radius: 10px;
+    height: 460px;
+    transition:cubic-bezier(1, 1, 1, 1);
+}
+/* Ninenth Icon */
+.noti{
+    cursor: pointer;
+    margin:auto;
+}
+.noti img{
+    position: absolute;
+    height: 30px;
+    padding: 10px;
+    bottom:0px;
+    align-items: center;
+    right: 0%;
+}
+.notiin{
+    position: absolute;
+    left: 790px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    z-index: -2;
+    bottom: 10%;
+}
+.notiin img{
+    border-radius: 10px;
+    height: 360px;
+    transition:cubic-bezier(1, 1, 1, 1);
+}

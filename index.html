@@ -1,83 +1,140 @@
 <!DOCTYPE html>
-<html>
-    <link rel="icon" href="https://i.postimg.cc/G38bqc55/228-2280138-flag-of-nepal-hd-png-download-removebg-preview.png" type="image/x-icon">
-    <title>Nepwin</title>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0a4d055804.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/G38bqc55/228-2280138-flag-of-nepal-hd-png-download-removebg-preview.png"
+      type="image/x-icon"
+    />
+    
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="welcome">
+      Welcome to the Nepwin Nepal's First Online OS Created by @Rikesh Dahal
+    </div>
+    <div id="eye" onclick="myFunction()">
+      <i class="fas fa-solid fa-eye"></i>
+    </div>
 
-
-.bgimg {
-  background-image: url('https://source.unsplash.com/1080x1000/?Nepal');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-<body>
-
-<div class="bgimg">
-  <div class="topleft">
-    <p><img src="https://i.postimg.cc/G38bqc55/228-2280138-flag-of-nepal-hd-png-download-removebg-preview.png" style="border-radius: 50%;" alt="">
-    </p>
-  </div>
-  <div class="middle">
-    <h1 style="color: #fff200">"Nepwin OS"</h1>
-    <h1>COMING SOON</h1>
-    <hr>
-    <div><h3 class="" id="time-counter" class="border border-light my-4 p-4"></h3></div>
-  </div>
-  <div class="bottomleft">
-  </div>
-</div>
-<script type="text/javascript">
-      var countDownDate = new Date();
-      countDownDate.setDate(countDownDate.getDate() + 30);
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var days = Math.floor(distance / (4000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById('time-counter').innerHTML =
-          days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById('time-counter').innerHTML = 'EXPIRED';
+    <div class="forget">forget password?</div>
+    <div class="image">
+      <img
+        src="https://i.postimg.cc/Y0pzKLrx/285643673-987985191875297-4347358433449523596-n.jpg"
+        alt="https://i.postimg.cc/R0H7sPxH/rikesh.png"
+      />
+    </div>
+    <input type="password" id="password" placeholer="Choose Password" />
+    <button id="myBtn" type="button" onclick="getInfo()">Log in</button>
+    <style>
+      body {
+        background-image: url("https://i.postimg.cc/25Q6Q1Cz/raimond-klavins-KKm1ua7-MSf0-unsplash.jpg");
+        background-size: cover;
+        overflow: hidden;
+        justify-content: center;
+      }
+      input {
+        position: absolute;
+        top: 68.7%;
+        padding: 10px;
+        margin-left: 37%;
+        border-radius: 5px;
+      }
+      button {
+        position: absolute;
+        bottom: 23.5%;
+        padding: 10px;
+        margin-left: 55%;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 5px;
+        background: linear-gradient(90deg, royalblue, lightgreen);
+        font-size: 20px;
+        font-weight: bold;
+        color: whitesmoke;
+      }
+      .welcome {
+        margin-top: 6%;
+        font-family: cursive;
+        border-radius: 5px;
+        background: linear-gradient(90deg, rgb(116, 74, 74), rgb(255, 0, 0));
+        font-size: 20px;
+        font-weight: bold;
+        color: whitesmoke;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .image img {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 40%;
+        width: 175px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      #eye {
+        top: 71%;
+        z-index: 1;
+        position: fixed;
+        margin-left: 52%;
+      }
+      .forget {
+        position: fixed;
+        bottom: 20%;
+        margin-left: 45%;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
         }
-      }, 1000);
+      }
+
+      let forget = document.getElementsByClassName("forget")[0];
+      forget.addEventListener("click", () => {
+        console.log("clicked");
+        alert("Password is :-12345");
+      });
+      var objPeople = [
+        {
+          password: "12345",
+        },
+      ];
+
+      function getInfo() {
+        var password = document.getElementById("password").value;
+
+        for (var i = 0; i < objPeople.length; i++) {
+          // check is user input matches username and password of a current index of the objPeople array
+          if (password == objPeople[i].password) {
+            location.replace("main.html");
+            return;
+          }
+        }
+        console.log("incorrect username or password");
+        alert("incorrect password");
+      }
+      addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("myBtn").click();
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
