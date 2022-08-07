@@ -99,14 +99,14 @@ body{
     margin: auto;
 }
 .sutdown img{
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     position: absolute;
     height: 30px;
     padding: 10px;
     bottom:0px;
     border-radius: 60px;
     align-items: center;
-    margin-left: 63%;
+    margin-left: 61%;
     cursor: pointer;
     z-index:110;
     
