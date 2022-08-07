@@ -140,7 +140,7 @@ let gotiin = document.getElementsByClassName("notiin")[0]
 goti.addEventListener("click", ()=>{
     console.log("clicked");
     if(gotiin.style.left == "420px"){
-        gotiin.style.left = "790px"
+        gotiin.style.left = "990px"
     }
     else{
         gotiin.style.left = "420px"
